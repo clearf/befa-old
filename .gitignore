@@ -11,6 +11,8 @@
 ehthumbs.db
 Thumbs.db
 *~
+*.swp
+*.swo
 
 # Python
 *.pyc
