@@ -96,11 +96,16 @@ textarea {
    ========================================================================== */
 
 .carousel-flush {
-  margin: 0px -2px;
+  margin: 0px 0px;
 }
 
 .navbar {
   margin-bottom: -1px;
+  border-left: 0px;
+  border-right: 0px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 .navbar, .navbar .navbar-toggle, .navbar .navbar-default, 
@@ -117,11 +122,26 @@ textarea {
 }
 
 
+.breadcrumb {
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.breadcrumb > li + li:before {
+    color: #ccc;
+    content: "";
+    padding: 0 0px;
+}
+
 
 .btn-h2-align {
   margin-top: 15px
 }
 
+p, li {
+  font-size: 16px; 
+  color: #999999;
+}
 
 
 
