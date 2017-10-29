@@ -95,13 +95,32 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.carousel-flush {
+  margin: 0px -2px;
+}
+
+.navbar {
+  margin-bottom: -1px;
+}
+
+.navbar, .navbar .navbar-toggle, .navbar .navbar-default, 
+ .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {
+  background-color: #004e73;
+}
+
+.navbar-header, .navbar-default .navbar-nav>li>a {
+  color: #ffffff;
+}
+
+.navbar .navbar-left img {
+  padding: 15px 0px 0px;
+}
 
 
 
-
-
-
-
+.btn-h2-align {
+  margin-top: 15px
+}
 
 
 
