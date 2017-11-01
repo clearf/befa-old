@@ -99,6 +99,13 @@ textarea {
   margin: 0px 0px;
 }
 
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+
+
+
 .navbar {
   margin-bottom: -1px;
   border-left: 0px;
@@ -108,14 +115,84 @@ textarea {
   border-radius: 0;
 }
 
-.navbar, .navbar .navbar-toggle, .navbar .navbar-default, 
- .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {
-  background-color: #004e73;
-}
 
-.navbar-header, .navbar-default .navbar-nav>li>a {
+.navbar, .navbar .navbar-toggle, .navbar .navbar-default, 
+.navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover
+{
+  background-color: #004e73;
   color: #ffffff;
 }
+
+
+/*
+#befa-navbar > ul > li.dropdown > div > ul > li > a
+.navbar .navbar-default .navbar-nav .dropdown .open .dropdown-menu>li>a,
+*/
+
+.navbar .btn,
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover,
+.navbar .navbar-nav .dropdown-menu,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,
+.navbar .navbar-nav .dropdown-menu a
+{
+    color: #ffffff;
+    background-color: #004e73;
+    border-style: transparent;
+    border-width: 0px;
+    font-size: 16px;
+}
+
+/*
+Do a nice border in normal view
+*/
+@media(min-width:768px){
+  .navbar .navbar-nav .dropdown-menu
+  {
+      border-width: 2px;
+      border-top-width: 1px;
+      border-top-style: dotted;
+      border-color: black;
+      margin-top: 6px;
+  }
+}
+
+.navbar .navbar-nav>li>a 
+{
+  color: #ffffff;
+  outline-width: 0px;
+}
+
+/*
+{ 
+  color: blue;
+  outline-width: 0px;
+}
+*/
+
+.navbar .navbar-nav .dropdown a:hover,
+.navbar .navbar-nav .dropdown a:active,
+.navbar .navbar-nav .dropdown a:focus,
+.navbar .navbar-nav>li>a:focus,
+.navbar .navbar-nav>li>a:hover
+{ 
+  color: #00b5f1;
+  outline-width: 0px;
+  box-shadow: none;
+}
+
+/*
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active,
+{
+  color: #fffffd;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #004e73;
+    border-style: transparent;
+    color: red;
+}
+*/
 
 .navbar .navbar-left img {
   padding: 15px 0px 0px;

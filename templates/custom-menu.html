@@ -1,7 +1,6 @@
 {% load menu_tags %}
 
 
-<div class="dropdown nav navbar-nav">
     {% for child in children %}
 <!-- no child pages  -->
         {% if child.is_leaf_node %}
@@ -11,25 +10,26 @@
 <!-- has child pages  -->
         {% if not child.is_leaf_node or child.ancestor %}
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <div class="navbar-btn btn-group"> 
+                <a href="{{ child.get_absolute_url }}" class="btn">
                   {{child.get_menu_title }}
+                </a>
+                <a href="#" class="dropdown-toggle btn dropdown-toggle-split" data-toggle="dropdown">
                   <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                    {% if child.get_descendants %}
-                        {% for kid in child.get_descendants %}
-                            <li>
-                                <a href="{{ kid.get_absolute_url }}">
-                                    {{kid.get_menu_title }}
-                                </a>
-                            </li>
-                        {% endfor %}
-                    {% endif %}
-                </ul>
+                      {% if child.get_descendants %}
+                          {% for kid in child.get_descendants %}
+                              <li>
+                                  <a href="{{ kid.get_absolute_url }}">
+                                      {{kid.get_menu_title }}
+                                  </a>
+                              </li>
+                          {% endfor %}
+                      {% endif %}
+                  </ul>
+              </div>
             </li>
         {% endif %}
 <!-- /has child pages  -->
     {% endfor %} 
-<!-- /end for child -->
-</div>
-
