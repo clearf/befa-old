@@ -6,11 +6,12 @@ INSTALLED_ADDONS = [
     'aldryn-django',
     'aldryn-sso',
     'aldryn-django-cms',
-    'aldryn-devsync',
     'aldryn-bootstrap3',
-    'aldryn-newsblog',
+    'djangocms-file',
     'djangocms-googlemap',
     'djangocms-history',
+    'djangocms-link',
+    'djangocms-picture',
     'djangocms-snippet',
     'djangocms-style',
     'djangocms-text-ckeditor',
@@ -27,8 +28,4 @@ aldryn_addons.settings.load(locals())
 
 INSTALLED_APPS.extend([
     # add your project specific apps here
-])
-
-MIDDLEWARE_CLASSES.extend([
-    # add your own middlewares here
 ])
