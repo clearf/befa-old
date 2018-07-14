@@ -221,15 +221,22 @@ p, li {
 }
 
 
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
 
-
-
-
+.big-icon {
+  font-size: 60px; 
+  margin-top: 30px;
+}
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+
 
 /*
  * Hide visually and from screen readers
