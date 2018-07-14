@@ -15,6 +15,7 @@ class Form(forms.BaseForm):
         settings['FILER_DEBUG'] = boolean_ish(env('FILER_DEBUG', settings['DEBUG']))
         settings['FILER_ENABLE_LOGGING'] = boolean_ish(env('FILER_ENABLE_LOGGING', True))
         settings['FILER_IMAGE_USE_ICON'] = True
+        settings['FILER_ENABLE_PERMISSIONS'] = False
         settings['ADDON_URLS'].append(
             'filer.server.urls'
         )
